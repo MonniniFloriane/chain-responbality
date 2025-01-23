@@ -15,9 +15,9 @@ public class Main {
         Order requestD = new Order(ETypeOrder.SOLDAT, "???????");
 
         general.handleRequest(requestA);
-        caporal.handleRequest(requestB);
-        sergent.handleRequest(requestC);
-        soldat.handleRequest(requestD);
+        general.handleRequest(requestB);
+        general.handleRequest(requestC);
+        general.handleRequest(requestD);
 
         System.out.println(requestA.getConclusion());
         System.out.println(requestB.getConclusion());
